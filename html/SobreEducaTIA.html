@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EducaTIA</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #3498ca;
+            --secondary-color: #f1f5f9;
+            --text-primary: #101619;
+            --text-secondary: #577c8e;
+            --background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="bg-[var(--background-color)]" style="font-family: 'Lexend', 'Noto Sans', sans-serif;">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 py-4">
+<a class="flex items-center gap-3 text-[var(--text-primary)]" href="#">
+<div class="h-8 w-8 text-[var(--primary-color)]">
+<svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"></path>
+</svg>
+</div>
+<h1 class="text-2xl font-bold tracking-tight">EducaTIA</h1>
+</a>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]" href="../index.html">Inicio</a>
+<a class="text-sm font-medium text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]" href="/html/planes.html">Planes</a>
+<a class="text-sm font-medium text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]" href="/html/Contacto.html">Contacto</a>
+<a class="text-sm font-bold text-[var(--primary-color)]" href="#">Sobre EducaTIA</a>
+</nav>
+<div class="flex items-center gap-4">
+<button 
+  onclick="location.href='/html/login.html'" 
+  class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-[var(--primary-color)] text-white text-sm font-bold shadow-lg shadow-blue-500/20 transition-all hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300">
+  <span class="truncate">Comienza Ahora</span>
+</button>
+<button class="md:hidden">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="bg-white py-16 sm:py-24">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-base font-semibold uppercase tracking-wider text-[var(--primary-color)]">Sobre Nosotros</h2>
+<p class="mt-2 text-4xl font-extrabold tracking-tight text-[var(--text-primary)] sm:text-5xl">Empoderando educadoras y al servicio de tu vocación.</p>
+<p class="mx-auto mt-6 max-w-2xl text-lg text-[var(--text-secondary)]">EducaTIA se dedica a proporcionar a las educadoras de parvulo herramientas y recursos para crear experiencias de aprendizaje inclusivas y atractivas para niños con Necesidades Educativas Especiales (NEE).</p>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
+<div class="space-y-8">
+<div>
+<h3 class="text-2xl font-bold text-[var(--text-primary)]">Our Mission</h3>
+<p class="mt-4 text-base text-[var(--text-secondary)]">To revolutionize early childhood education by providing educators with innovative, accessible, and effective resources that cater to the diverse needs of all children, fostering a supportive community for collaboration and growth.</p>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-[var(--text-primary)]">Our Vision</h3>
+<p class="mt-4 text-base text-[var(--text-secondary)]">We envision a world where every child, regardless of their abilities, has the opportunity to thrive in a nurturing and stimulating educational environment, supported by empowered and confident educators.</p>
+</div>
+</div>
+<div class="relative h-64 overflow-hidden rounded-2xl shadow-lg md:h-auto">
+<img alt="Children playing with educational toys" class="absolute inset-0 h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWxA0Np0LsKXA3vjuo03Zp43cD_1eOcd309-8ko0_rdtFqU8mr48x0I2b0nzS-Kqoo54SYi0DO0u8lvL6dQg9y2E8N87FK7dZ1wmDvTJteRc93WfmisGQ7Ak2VbW_77ckCseH9g_hGgYO-O0IuF7esaSfGwbm6wAHxU91003qMv2fLOAICTK99akEavmDxYztq02jtgZVygEEmvM4E69CFju03DRkJ2p7E1KQjwq_2bLxQuT276W6AZSqq_UtX2-_ZdfBOmGRfjruc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 sm:py-24">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl font-extrabold tracking-tight text-[var(--text-primary)] sm:text-4xl">Our Core Values</h2>
+</div>
+<div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<div class="rounded-xl bg-[var(--secondary-color)] p-6 text-center shadow-sm transition-all hover:shadow-md">
+<div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[var(--primary-color)] text-white">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="mt-4 text-lg font-medium text-[var(--text-primary)]">Inclusivity</h3>
+<p class="mt-2 text-sm text-[var(--text-secondary)]">Every child deserves to thrive. We champion diversity and create opportunities for all.</p>
+</div>
+<div class="rounded-xl bg-[var(--secondary-color)] p-6 text-center shadow-sm transition-all hover:shadow-md">
+<div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[var(--primary-color)] text-white">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21v-1a6 6 0 00-5.197-5.977" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="mt-4 text-lg font-medium text-[var(--text-primary)]">Collaboration</h3>
+<p class="mt-2 text-sm text-[var(--text-secondary)]">We foster a community where educators connect, share, and learn from one another.</p>
+</div>
+<div class="rounded-xl bg-[var(--secondary-color)] p-6 text-center shadow-sm transition-all hover:shadow-md">
+<div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[var(--primary-color)] text-white">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="mt-4 text-lg font-medium text-[var(--text-primary)]">Innovation</h3>
+<p class="mt-2 text-sm text-[var(--text-secondary)]">We are committed to continuous improvement, seeking new and better ways to serve.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl font-extrabold tracking-tight text-[var(--text-primary)] sm:text-4xl">Conoce al equipo</h2>
+<p class="mx-auto mt-4 max-w-2xl text-lg text-[var(--text-secondary)]">Nuestro equipo está compuesto por personas apasionadas, expertos en tecnología dedicados a hacer una diferencia.</p>
+</div>
+<div class="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col items-center text-center">
+<div class="h-40 w-40">
+<img alt="Dr. Amelia Carter" class="h-full w-full rounded-full object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQld9rxuPMIapVSVWPvK_DgTGUqYpy2j9dPEIr9dV9lYB486tGVYG8hhH5E0-GessHqHn6Q7ui-T5PpYho4GTAVLxtznAbS0R3YDmyB9x0OCzB8uniuuyo6_wTWNc8vbLQ0C8Kz_d44ymwF2eQIr-yMMbRMGAYlNnOKgLZqmOKHENqsRDJ-Cy8eTkPV0_UviOXpW67aIw76d4F2fIREXeaskLx1Q51qqfoj6QxXbR8y39-Nfb7NLLpewOo5cYZyawDSfYoxUqrgtSz"/>
+</div>
+<div class="mt-4">
+<h3 class="text-lg font-bold text-[var(--text-primary)]">Camila Vicencio Miranda</h3>
+<p class="text-sm font-medium text-[var(--primary-color)]">Fundadora &amp; CEO</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="h-40 w-40">
+<img alt="Mr. Ethan Bennett" class="h-full w-full rounded-full object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4YKm3tw1DzLnPojCptf8SOK3Oc2pb55AYA6RkrMnfZNoV6oh_zDo2cGPA5QQayCkZ0K37LLLJPnkdNaM6Va2mPP2A92mZCoS221pRG4WkYuoyjYMLz-UNZjlm5-X56Hmndcg38U6HwilFxMYJiHpBNowGRmE3LoWFZ86ZEAms27Fu4sF1TVW3iLPxWgylUVRGi8yFEp_-UjwUDmF2TnZ1vjzhrFpsq0yg7j55tNjaSFrk6nPT5aQrAvKla9MfwQLnT8KL5vNA7inH"/>
+</div>
+<div class="mt-4">
+<h3 class="text-lg font-bold text-[var(--text-primary)]">José Plata</h3>
+<p class="text-sm font-medium text-[var(--primary-color)]">Experto en Backend</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="h-40 w-40">
+<img alt="Ms. Olivia Hayes" class="h-full w-full rounded-full object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4YKm3tw1DzLnPojCptf8SOK3Oc2pb55AYA6RkrMnfZNoV6oh_zDo2cGPA5QQayCkZ0K37LLLJPnkdNaM6Va2mPP2A92mZCoS221pRG4WkYuoyjYMLz-UNZjlm5-X56Hmndcg38U6HwilFxMYJiHpBNowGRmE3LoWFZ86ZEAms27Fu4sF1TVW3iLPxWgylUVRGi8yFEp_-UjwUDmF2TnZ1vjzhrFpsq0yg7j55tNjaSFrk6nPT5aQrAvKla9MfwQLnT8KL5vNA7inH"/>
+</div>
+<div class="mt-4">
+<h3 class="text-lg font-bold text-[var(--text-primary)]">Alexander Vera Miranda</h3>
+<p class="text-sm font-medium text-[var(--primary-color)]">Especialista QA y Frontend</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="h-40 w-40">
+<img alt="Ms. Olivia Hayes" class="h-full w-full rounded-full object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4YKm3tw1DzLnPojCptf8SOK3Oc2pb55AYA6RkrMnfZNoV6oh_zDo2cGPA5QQayCkZ0K37LLLJPnkdNaM6Va2mPP2A92mZCoS221pRG4WkYuoyjYMLz-UNZjlm5-X56Hmndcg38U6HwilFxMYJiHpBNowGRmE3LoWFZ86ZEAms27Fu4sF1TVW3iLPxWgylUVRGi8yFEp_-UjwUDmF2TnZ1vjzhrFpsq0yg7j55tNjaSFrk6nPT5aQrAvKla9MfwQLnT8KL5vNA7inH"/>
+</div>
+<div class="mt-4">
+<h3 class="text-lg font-bold text-[var(--text-primary)]">Moises Palacios</h3>
+<p class="text-sm font-medium text-[var(--primary-color)]">Especialista Frontend</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="h-40 w-40">
+<img alt="Ms. Olivia Hayes" class="h-full w-full rounded-full object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4YKm3tw1DzLnPojCptf8SOK3Oc2pb55AYA6RkrMnfZNoV6oh_zDo2cGPA5QQayCkZ0K37LLLJPnkdNaM6Va2mPP2A92mZCoS221pRG4WkYuoyjYMLz-UNZjlm5-X56Hmndcg38U6HwilFxMYJiHpBNowGRmE3LoWFZ86ZEAms27Fu4sF1TVW3iLPxWgylUVRGi8yFEp_-UjwUDmF2TnZ1vjzhrFpsq0yg7j55tNjaSFrk6nPT5aQrAvKla9MfwQLnT8KL5vNA7inH"/>
+</div>
+<div class="mt-4">
+<h3 class="text-lg font-bold text-[var(--text-primary)]">Esteban Guerrero</h3>
+<p class="text-sm font-medium text-[var(--primary-color)]">Especialista Diseño UX/UI</p>
+</div>
+</section>
+</main>
+<footer class="bg-white">
+<div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+<div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-4 md:order-2">
+<a class="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]" href="#">Terms</a>
+<a class="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]" href="#">Privacy</a>
+<a class="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]" href="#">Contact</a>
+</div>
+<p class="text-sm text-[var(--text-secondary)] md:order-1">© 2024 EducaTIA. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EducaTIA</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #47b4ea;
+            --secondary-color: #F8B400;
+            --accent-color: #F3F4F6;
+            --text-primary: #1F2937;
+            --text-light: #6B7280;
+            --background-color: #FEFBF6;
+        }
+        body {
+            font-family: 'Lexend', 'Noto Sans', sans-serif;
+            background-color: var(--background-color);
+        }
+    </style>
+</head>
+<body class="text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<header class="w-full">
+<div class="container mx-auto flex items-center justify-between whitespace-nowrap px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 text-[var(--primary-color)] flex items-center justify-center rounded-full bg-blue-100">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.08V15c0-1.1.9-2 2-2h1v-2h-1c-2.21 0-4 1.79-4 4v1.08l-2.71 2.71c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L11 16.08zM17.71 8.29l-4.59 4.59c-.39.39-1.02.39-1.41 0l-2.3-2.3c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.59 1.59 3.88-3.88c.39-.39 1.02-.39 1.41 0 .4.39.4 1.02.01 1.41z"></path></svg>
+</div>
+<h1 class="text-2xl font-bold tracking-tight">EducaTIA</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-base font-medium text-[var(--text-light)] hover:text-[var(--primary-color)] transition-colors" href="/html/SobreEducaTIA.html">Sobre EducaTIA</a>
+<a class="text-base font-medium text-[var(--text-light)] hover:text-[var(--primary-color)] transition-colors" href="/html/planes.html">Planes</a>
+<a class="text-base font-medium text-[var(--text-light)] hover:text-[var(--primary-color)] transition-colors" href="/html/Contacto.html">Contacto</a>
+</nav>
+<div class="flex items-center gap-3">
+<a class="px-5 py-2.5 text-base font-semibold text-[var(--text-primary)] rounded-lg hover:bg-gray-100 transition-colors" href="/html/login.html">
+  Iniciar Sesión
+</a>
+
+<a class="px-5 py-2.5 text-base font-semibold text-white bg-[var(--primary-color)] rounded-lg hover:bg-opacity-90 transition-all shadow-sm" href="./html/register.html">
+  Registrarse
+</a>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="container mx-auto px-6 py-16 md:py-24">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6 text-center md:text-left">
+<span class="text-base font-semibold text-[var(--primary-color)] uppercase tracking-wider">Bienvenidas EducaTIA</span>
+<h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tighter">
+                            Empoderando <span class="text-[var(--primary-color)]">educadoras</span>
+                            y al servicio de tu vocación.
+                        </h1>
+<p class="text-lg text-[var(--text-light)] max-w-xl mx-auto md:mx-0">
+En EducaTIA encontrarás un espacio creado con cariño y propósito, donde las educadoras de párvulo pueden diseñar actividades significativas, accesibles y llenas de creatividad                        </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4 justify-center md:justify-start">
+<a class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-[var(--primary-color)] rounded-lg hover:bg-opacity-90 transition-all shadow-lg transform hover:scale-105" href="#">
+                                Crea Tu Actividad
+                            </a>
+<a class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[var(--text-primary)] bg-[var(--accent-color)] rounded-lg hover:bg-gray-200 transition-colors transform hover:scale-105" href="#">
+                                Más Información
+                            </a>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-full bg-blue-100 absolute -top-8 -left-8 w-32 h-32 opacity-50"></div>
+<div class="aspect-square rounded-full bg-yellow-100 absolute -bottom-8 -right-8 w-48 h-48 opacity-50"></div>
+<img alt="Foto de Relleno" class="rounded-3xl shadow-2xl relative z-10 w-full h-auto object-cover aspect-[4/3]" src="./assets/Prompt.png"/>
+</div>
+</div>
+</section>
+</main>
+</div>
+
+</body></html>

@@ -1,0 +1,132 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #62a7ca;
+        --secondary-color: #f0f4f7;
+        --text-primary: #101618;
+        --text-secondary: #5c7a8a;
+      }
+    </style>
+</head>
+<body class="bg-gray-50 text-[var(--text-primary)]" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#eaeef1] px-10 py-4">
+<div class="flex items-center gap-4 text-[var(--text-primary)]">
+<svg class="size-6 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-[var(--text-primary)] text-xl font-bold leading-tight tracking-[-0.015em]">EducaTIA</h2>
+</div>
+<nav class="flex flex-1 justify-center gap-8">
+<a class="text-[var(--text-primary)] hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="/index.html">Inicio</a>
+<a class="text-[var(--text-primary)] hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="/html/planes.html">Planes</a>
+<a class="text-[var(--text-primary)] hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="/html/SobreEducaTIA.html">Sobre EducaTIA</a>
+<a class="text-[var(--text-primary)] hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="/html/Contacto.html">Contacto</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-[var(--secondary-color)] text-[var(--text-primary)] hover:bg-gray-200 transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"></path>
+</svg>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRWgBhxhdzZToJmbMfyrXwn0aPvdaEuwLiggWKVezx8HbDe3GZXDDYVjP_jnSxwCYupa_PhEWfSoULUvHHMTE6QV2LQbzL6VB473PwuhPrkxyh4Kg3JkBz3lM4rwSNRKfz_Kze77qsm5USiEE92nLj8aYJIEAhPWPH3TxCFq2rmACdQscQgFqceo9c2qTXssAL_PuPzT8XkUKlaplcAtJTtSqWEE6oBdM2xMxyBn9TN5UO6h-Zq17ZcRsEtlCg5c8AUj9wGCGAWIUj");'></div>
+</div>
+</header>
+<main class="flex-1 px-10 py-12">
+<div class="mx-auto max-w-4xl">
+<div class="text-center mb-12">
+<h1 class="text-4xl font-bold tracking-tight text-[var(--text-primary)] sm:text-5xl">Contactanos</h1>
+<p class="mt-4 text-lg leading-8 text-[var(--text-secondary)]">Estamos aquí para ayudar! Contáctanos con cualquier pregunta o comentario.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<form class="space-y-6">
+<div>
+<label class="block text-base font-medium leading-6 text-[var(--text-primary)]" for="name">Tu Nombre</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-xl border-0 bg-[var(--secondary-color)] py-3 px-4 text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:ring-2 focus:ring-inset focus:ring-[var(--primary-color)] sm:text-base sm:leading-6" id="name" placeholder="Ingresa tu nombre" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-base font-medium leading-6 text-[var(--text-primary)]" for="email">Tu Correo Electrónico</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-xl border-0 bg-[var(--secondary-color)] py-3 px-4 text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:ring-2 focus:ring-inset focus:ring-[var(--primary-color)] sm:text-base sm:leading-6" id="email" placeholder="Ingresa tu correo electrónico" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-base font-medium leading-6 text-[var(--text-primary)]" for="subject">Asunto</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-xl border-0 bg-[var(--secondary-color)] py-3 px-4 text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:ring-2 focus:ring-inset focus:ring-[var(--primary-color)] sm:text-base sm:leading-6" id="subject" placeholder="Ingresa el asunto" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-base font-medium leading-6 text-[var(--text-primary)]" for="message">Mensaje</label>
+<div class="mt-2">
+<textarea class="form-textarea block w-full rounded-xl border-0 bg-[var(--secondary-color)] py-3 px-4 text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:ring-2 focus:ring-inset focus:ring-[var(--primary-color)] sm:text-base sm:leading-6" id="message" placeholder="Ingresa tu mensaje" rows="4"></textarea>
+</div>
+</div>
+<div class="flex justify-end">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[var(--primary-color)] text-white text-base font-bold leading-normal tracking-wide shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary-color)] transition-colors" type="submit">
+                    Send Message
+                  </button>
+</div>
+</form>
+<div class="space-y-8">
+<div>
+<h3 class="text-2xl font-bold text-[var(--text-primary)] mb-4">Otras formas de contactarnos</h3>
+<div class="flex items-start gap-4 mb-6">
+<div class="flex items-center justify-center rounded-full bg-[var(--secondary-color)] shrink-0 size-12 text-[var(--primary-color)]">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path>
+</svg>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-[var(--text-primary)]">Email</h4>
+<p class="text-[var(--text-secondary)]">support@educaTIA.cl</p>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-[var(--text-primary)] mb-4">Siguenos</h3>
+<p class="text-[var(--text-secondary)] mb-6">Síguenos en las redes sociales para actualizaciones y discusiones de la comunidad.</p>
+<div class="flex gap-4">
+<a class="flex flex-col items-center gap-2 group" href="#">
+<div class="rounded-full bg-[var(--secondary-color)] group-hover:bg-gray-200 p-3.5 transition-colors">
+<svg class="text-[var(--text-primary)] size-6" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+</svg>
+</div>
+<p class="text-sm font-medium text-[var(--text-secondary)] group-hover:text-[var(--primary-color)]">Twitter</p>
+</a>
+<a class="flex flex-col items-center gap-2 group" href="#">
+<div class="rounded-full bg-[var(--secondary-color)] group-hover:bg-gray-200 p-3.5 transition-colors">
+<svg class="text-[var(--text-primary)] size-6" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
+</svg>
+</div>
+<p class="text-sm font-medium text-[var(--text-secondary)] group-hover:text-[var(--primary-color)]">Facebook</p>
+</a>
+<a class="flex flex-col items-center gap-2 group" href="#">
+<div class="rounded-full bg-[var(--secondary-color)] group-hover:bg-gray-200 p-3.5 transition-colors">
+<svg class="text-[var(--text-primary)] size-6" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+</svg>
+</div>
+<p class="text-sm font-medium text-[var(--text-secondary)] group-hover:text-[var(--primary-color)]">Instagram</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

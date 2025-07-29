@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<title>EducaTIA - Register</title>
+<style type="text/tailwindcss">
+      :root {
+        --brand-primary: #add6ea;
+        --brand-primary-light: #e6f2f8;
+        --brand-primary-dark: #82b9d9;
+        --brand-secondary: #f0f0f0;
+        --brand-text-dark: #101619;
+        --brand-text-light: #577c8e;
+        --brand-border: #d3dee4;
+      }
+      body {
+        font-family: 'Lexend', sans-serif;
+      }
+      .btn-primary {
+        @apply bg-[var(--brand-primary)] text-[var(--brand-text-dark)] hover:bg-[var(--brand-primary-dark)] transition-colors duration-300;
+      }
+      .form-input {
+        @apply w-full rounded-lg border-[var(--brand-border)] bg-white p-4 text-base text-[var(--brand-text-dark)] placeholder-[var(--brand-text-light)] focus:border-[var(--brand-primary)] focus:ring-[var(--brand-primary)];
+      }
+    </style>
+</head>
+<body class="bg-[#f9fafb]">
+<div class="w-full mb-8">
+  <a href="/index.html" 
+     class="text-sm font-medium text-[var(--brand-primary-dark)] hover:text-[var(--brand-primary)] flex items-center gap-2 pl-12 mt-4">
+    <span class="text-xl">&larr;</span> Volver
+  </a>
+</div>
+
+<body class="bg-[#f9fafb]">
+<div class="flex min-h-screen items-center justify-center">
+<div class="w-full flex flex-col items-center justify-center p-6 sm:p-12">
+<div class="w-full max-w-md">
+<div class="flex items-center justify-center mb-8 gap-3">
+<svg class="h-8 w-8 text-[var(--brand-primary)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-[var(--brand-text-dark)] text-2xl font-bold">EducaTIA</h2>
+</div>
+<div class="bg-white rounded-xl shadow-lg p-8">
+<h3 class="text-3xl font-bold text-[var(--brand-text-dark)] text-center mb-2">Crea tu cuenta</h3>
+<p class="text-[var(--brand-text-light)] text-center mb-8">¡Comencemos!</p>
+<form id="registerForm" class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-[var(--brand-text-dark)]" for="name">Nombre</label>
+<div class="mt-1">
+<input class="form-input" id="name" name="name" placeholder="Ingresa tu nombre completo" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-[var(--brand-text-dark)]" for="email">Correo electrónico</label>
+<div class="mt-1">
+<input autocomplete="email" class="form-input" id="email" name="email" placeholder="ejemplo@educaTIA.cl" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-[var(--brand-text-dark)]" for="password">Contraseña</label>
+<div class="mt-1">
+<input autocomplete="new-password" class="form-input" id="password" name="password" placeholder="••••••••" required="" type="password"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-[var(--brand-text-dark)]" for="confirm-password">Confirmar contraseña</label>
+<div class="mt-1">
+<input autocomplete="new-password" class="form-input" id="confirm-password" name="confirm-password" placeholder="••••••••" required="" type="password"/>
+</div>
+</div>
+<div>
+<button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-full shadow-sm text-base font-medium btn-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--brand-primary-dark)]" type="submit">
+                  Registrarse
+                </button>
+</div>
+</form>
+<p class="mt-8 text-center text-sm text-[var(--brand-text-light)]">
+              ¿Ya tienes una cuenta?
+              <a class="font-medium text-[var(--brand-primary-dark)] hover:text-[var(--brand-primary)]" href="/html/login.html"> Iniciar Sesión </a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.getElementById("registerForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+  const confirmPassword = document.getElementById("confirm-password").value.trim();
+
+  if (password !== confirmPassword) {
+    alert("Las contraseñas no coinciden.");
+    return;
+  }
+
+  try {
+    const response = await fetch("https://api.joseplata.dev/auth/sign-up", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        username: name,
+        email: email,
+        password: password
+      })
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      alert(data.message || "Usuario registrado correctamente. Revisa tu correo.");
+      window.location.href = "/html/login.html"; // cambia según tu ruta real
+    } else {
+      alert(data.message || "Error en el registro.");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Ocurrió un error al conectar con el servidor.");
+  }
+});
+</script>
+
+</body></html>

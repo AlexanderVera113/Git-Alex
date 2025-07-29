@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EducaTIA - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      :root {
+        --brand-primary: #47b4ea;
+        --brand-secondary: #f0f9ff;
+        --brand-text-primary: #1e293b;
+        --brand-text-secondary: #64748b;
+        --brand-surface: #ffffff;
+        --brand-background: #f0f9ff;
+        --brand-border: #cbd5e1;
+      }
+      body {
+        font-family: 'Lexend', sans-serif;
+      }
+    </style>
+</head>
+<div class="w-full mb-8">
+  <a href="/index.html" 
+     class="text-sm font-medium text-[var(--brand-primary-dark)] hover:text-[var(--brand-primary)] flex items-center gap-2 pl-12 mt-4">
+    <span class="text-xl">&larr;</span> Volver
+  </a>
+</div>
+<body class="bg-[var(--brand-background)] text-[var(--brand-text-primary)]">
+<div class="flex min-h-screen">
+<div class="hidden lg:flex lg:w-1/2 items-center justify-center bg-[var(--brand-primary)]/10 p-12 relative overflow-hidden">
+<div class="absolute -top-16 -left-16 w-48 h-48 bg-[var(--brand-primary)]/20 rounded-full"></div>
+<div class="absolute -bottom-24 -right-12 w-72 h-72 bg-[var(--brand-primary)]/20 rounded-full"></div>
+<div class="absolute top-1/2 left-1/4 w-32 h-32 bg-[var(--brand-primary)]/10 rounded-xl -rotate-12"></div>
+<div class="absolute bottom-1/4 right-1/4 w-24 h-24 bg-[var(--brand-primary)]/10 rounded-full rotate-12"></div>
+<div class="z-10 text-center">
+<h1 class="text-4xl font-bold text-[var(--brand-text-primary)] mb-4">EducaTIA</h1>
+<p class="text-xl text-[var(--brand-text-secondary)]">Tu generador de experiencias de aprendizaje inclusivas.</p>
+<div class="mt-8 flex justify-center gap-4">
+<span class="w-16 h-16 bg-[var(--brand-primary)]/30 rounded-lg flex items-center justify-center text-4xl">🧩</span>
+<span class="w-16 h-16 bg-[var(--brand-primary)]/30 rounded-lg flex items-center justify-center text-4xl">🎨</span>
+<span class="w-16 h-16 bg-[var(--brand-primary)]/30 rounded-lg flex items-center justify-center text-4xl">📝</span>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 flex items-center justify-center p-6 sm:p-12">
+<div class="w-full max-w-md">
+<div class="text-center lg:text-left mb-10">
+<div class="flex items-center gap-3 justify-center lg:justify-start mb-2">
+<svg class="w-8 h-8 text-[var(--brand-primary)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-[var(--brand-text-primary)] text-2xl font-bold lg:hidden">EducaTIA</h2>
+</div>
+<h3 class="text-3xl font-bold text-[var(--brand-text-primary)]">¡Bienvenida de vuelta, educadora!</h3>
+<p class="text-[var(--brand-text-secondary)] mt-2">Por favor ingresa tus datos para iniciar sesión.</p>
+</div>
+<form id="loginForm" class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-[var(--brand-text-primary)] mb-2" for="email">Correo Electrónico</label>
+<input autocomplete="email" class="form-input block w-full rounded-lg border-0 py-3 px-4 bg-[var(--brand-surface)] text-[var(--brand-text-primary)] ring-1 ring-inset ring-[var(--brand-border)] placeholder:text-[var(--brand-text-secondary)] focus:ring-2 focus:ring-inset focus:ring-[var(--brand-primary)] sm:text-sm sm:leading-6" id="email" name="email" placeholder="ejemplo@educaTIA.cl" required="" type="email"/>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<label class="block text-sm font-medium leading-6 text-[var(--brand-text-primary)] mb-2" for="password">Contraseña</label>
+<div class="text-sm">
+<a class="font-semibold text-[var(--brand-primary)] hover:text-[var(--brand-primary)]/80" href="#">¿Olvidaste tu contraseña?</a>
+</div>
+</div>
+<input autocomplete="current-password" class="form-input block w-full rounded-lg border-0 py-3 px-4 bg-[var(--brand-surface)] text-[var(--brand-text-primary)] ring-1 ring-inset ring-[var(--brand-border)] placeholder:text-[var(--brand-text-secondary)] focus:ring-2 focus:ring-inset focus:ring-[var(--brand-primary)] sm:text-sm sm:leading-6" id="password" name="password" placeholder="••••••••" required="" type="password"/>
+</div>
+<div class="flex items-center">
+<input class="h-4 w-4 rounded border-[var(--brand-border)] text-[var(--brand-primary)] focus:ring-[var(--brand-primary)]" id="remember-me" name="remember-me" type="checkbox"/>
+<label class="ml-3 block text-sm text-[var(--brand-text-secondary)]" for="remember-me">Recuérdame</label>
+</div>
+<div>
+<button class="flex w-full justify-center rounded-lg bg-[var(--brand-primary)] px-4 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[var(--brand-primary)]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)] transition-colors duration-200" type="submit">
+                Iniciar Sesión
+              </button>
+</div>
+</form>
+<p class="mt-10 text-center text-sm text-[var(--brand-text-secondary)]">
+            ¿No eres miembro?
+            <a class="font-semibold leading-6 text-[var(--brand-primary)] hover:text-[var(--brand-primary)]/80" href="/html/register.html">Regístrate gratis</a>
+</p>
+</div>
+</div>
+</div>
+<script>
+document.getElementById("loginForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+
+  try {
+    const response = await fetch("https://api.joseplata.dev/auth/sign-in", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      credentials: "include", // <- esto permite recibir la cookie HttpOnly
+      body: JSON.stringify({ email, password })
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      alert(data.message || "Inicio de sesión exitoso.");
+      window.location.href = "/html/dashboard.html"; // redirige a la página principal (ajusta si tienes otra)
+    } else {
+      alert(data.message || "Credenciales inválidas.");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Ocurrió un error al conectar con el servidor.");
+  }
+});
+</script>
+
+</body></html>
